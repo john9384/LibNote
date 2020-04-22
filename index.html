@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Shelf</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper brown darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo">E-Shelf</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#book-form">ADD BOOKS</a></li>
+            <li><a href="#book-list">SHELF</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="welcome">
+      <div class="container">
+        <h3>Welcome to E-shelf</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rem
+          dicta totam optio perspiciatis, pariatur sit molestiae ducimus,
+          reiciendis modi ut repudiandae reprehenderit adipisci enim sint odit
+          voluptas eos beatae.
+        </p>
+        <a href="#book-form" class="btn brown darken-1">ADD BOOKS</a>
+        <a href="#book-list" class="btn brown darken-1">SHELF</a>
+      </div>
+    </header>
+    <div class="container" id="container">
+      <form id="book-form">
+        <h4>Add Book to the Local shelf</h4>
+        <div class="row">
+          <div class="input-field col s12 m4 4">
+            <label for="book-title">Book Title</label>
+            <input type="text" id="book-title" />
+          </div>
+          <div class="input-field col s12 m4 4">
+            <label for="book-author">Book Author</label>
+            <input type="text" id="book-author" />
+          </div>
+          <div class="input-field col s12 m4 4">
+            <label for="book-isbn">Book ISBN</label>
+            <input type="text" id="book-isbn" />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          value="Add Book"
+          id="submit-btn"
+          class="waves-effect waves-light btn brown"
+        >
+          ADD BOOK
+        </button>
+      </form>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN#</th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
